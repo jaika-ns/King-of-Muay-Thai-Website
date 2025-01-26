@@ -1,0 +1,59 @@
+<header class="header">
+    <nav class="nav_container">
+        <div class="nav_data">
+            <div class="logo">
+                <a href="#" class="nav_logo">
+                    <img src="images/KMT_Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav_menu">
+                <a href="#" class="Home">Home</a>
+                <a href="#" class="Classes">Classes</a>
+                <a href="team.html" class="Team">Team</a>
+                <a href="#" class="Schedule">Schedule</a>
+                <a href="visa.html" class="Visa">Visa</a>
+                <a href="#" class="Contact us">Contact us</a>
+            </div>
+            <div class="div Login">
+                <a href="#" class="Log in">Log in / Sign up</a>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu">
+                    <img src="images/menu.png" alt="Menu">
+                </a>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <div class="dropdown">
+    <li><a href="#" class="Log in">Log in / Sign up</a></li>
+    <li><a href="#" class="Home">Home</a></li>
+    <li><a href="#" class="Classes">Classes</a></li>
+    <li><a href="team.html" class="Team">Team</a></li>
+    <li><a href="#" class="Schedule">Schedule</a></li>
+    <li><a href="#" class="Locate us">Locate us</a></li>
+    <li><a href="visa.html" class="Visa">Visa</a></li>
+    <li><a href="#" class="Contact us">Contact us</a></li>
+  </div>
+<body>
+    <script>
+        const menuIcon = document.querySelector('.menu');
+        const dropdownMenu = document.querySelector('.dropdown');
+      
+        menuIcon.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+      
+        window.addEventListener('click', (event) => {
+            if (!menuIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1280) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+      </script>      
+</body>  
