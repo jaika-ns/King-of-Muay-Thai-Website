@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/classes-1-styles.css">
-  <link rel="stylesheet" href="styles/footer-styles.css">
+  <link rel="stylesheet" href="styles/classes-styles.css">
   
   
   <title>Classes - Private Lessons</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(function(){
-      // Load header dynamically
-      $('#header').load('header-1.php');
-      // Load footer dynamically
-      $('#footer').load('footer.html');
+      $('#header').load('header.html');
     });
   </script>
+
+
+
 </head>
+
 <body>
   <div id="header"></div>
-  <div id="main-class">
+  <div id="main">
 
   <p class="title">Classes</p>
 
@@ -85,7 +85,7 @@
 
     
   </div>
-  </div>
-  <div id="footer"></div>
+  
+
 </body>
 </html>
