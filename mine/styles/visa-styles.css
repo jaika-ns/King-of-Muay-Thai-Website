@@ -1,0 +1,239 @@
+body{
+  background-color: #F9F9F9;
+  height: 1800px;
+}
+
+#main{
+  margin-top: 76px;
+  height: 730px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#main-2{
+  height: 730px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.types-cnt{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  gap: 50px;
+  width: 100%;
+  
+}
+.row, .row-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row-3{
+  position: relative;
+}
+
+.col, .col-1, .col-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 2;
+}
+
+.col-1{
+  max-width: 10%;
+  padding: 10px;
+}
+
+.col-2{
+  max-width: 90%;
+  padding: 10px;
+}
+
+#visa-title{
+  font-size: 32px;
+}
+
+#visa-title-desc{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#visa-dyk{
+  font-size: 20px;
+}
+
+#visa-claim{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#visa-check, #visa-fill{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#visa-fill{
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: justify;
+}
+
+.training-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds spacing between form elements */
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  -webkit-appearance: none; /* Remove default styles */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  color: #9e9e9e;
+}
+option:not(:first-of-type) {
+  color: black;
+}
+
+.row-3::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  right: 20px;
+  border-right: 1.5px solid #707070;
+  border-bottom: 1.5px solid #707070;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+#phone {
+  width: 166%; /* Match other input fields */
+  max-width: 480px; /* Limit width */
+  padding-left: 70px; /* Default space for flag and dial code */
+  padding-right: 10px; /* Ensure no overlap on the right */
+  box-sizing: border-box; /* Include padding in total width */
+  font-size: 16px;
+}
+
+
+.iti__flag-container {
+  position: absolute;
+  top: 50%;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Submit button styling */
+.row button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffdb4d; /* Yellow background */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.row button:hover {
+  background-color: #ffc107; /* Slightly darker yellow */
+}
+
+.col img{
+  height: 480px;
+  width: 320px;
+}
+
+.stats-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(24, 25, 46);;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.stat h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.slanted-section {
+  position: relative;
+  height: 800px;
+  background-color: rgb(24, 25, 46); /* Black background */
+  color: white; /* White text */
+  padding: 120px 20px; /* Padding inside the section */
+  transform: skewY(-5deg); /* Skew the section */
+  overflow: hidden; /* Hide anything that overflows */
+}
+
+.slanted-section .content {
+  transform: skewY(5deg); 
+  text-align: center; 
+  align-items: center;
+}
+
+.content .row{
+  padding-top: 50px;
+}
+
+.book-now {
+  display: block;
+  margin: 0 auto; 
+}
+
+.slanted-section-img {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.slanted-section-img img {
+  max-width: 18%; /* Adjust the image size */
+}
+
+.slanted-section h2 {
+  margin: 0 0 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}

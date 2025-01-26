@@ -1,0 +1,177 @@
+body{
+  background-color: #F9F9F9;
+  
+}
+
+p{
+  font-size: 14px;
+}
+
+#main{
+  padding-top: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.directory{
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.class-link{
+  color: gray;
+  cursor:pointer;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 25px;
+
+}
+
+.categories{
+  display: flex;
+  gap: 40px;
+  height: 20px;
+  
+  margin-bottom: 30px;
+}
+
+.categories p.active {
+  border-bottom: 2px solid #18192E; /* Active category */
+  font-weight: bold;
+}
+
+.categories p{
+  padding: 0px 5px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.categories p:hover{
+  border-bottom: solid 2px #18192E;
+}
+
+
+
+.session-container { 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 50px;
+  
+}
+
+.session-card { 
+  border: 1px solid #ffffff; 
+  background-color: white;
+  padding: 20px; 
+  border-radius: 8px; 
+  
+}
+
+.session-card h2 { 
+  margin-bottom: 10px; 
+}
+
+
+.inner-card{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #F9F9F9;
+  width: 500px;
+  height: 170px;
+  padding: 15px;
+  border-radius: 11px;
+  border: 0.5px solid #e8e8e8aa;
+}
+
+.inner-row{
+  display: flex;
+  height: 20px;
+  margin: 10px 0px;
+}
+
+.inner-row img{
+  width: 20px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button{
+  background-color: #18192E;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+/*exclusive to classes.php*/
+
+.class-container{
+  display:flex;
+  gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.class-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 0.5px solid #F9F9F9;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.class-card:hover{
+  border: solid 0.5px rgba(128, 128, 128, 0.332);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+}
+
+.img-cnt{
+  height: 300px;
+}
+
+.img-cnt img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.class-title-cnt{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-title{
+  color:#18192E;
+  font-weight: bold;
+  font-size: 28px;
+}
